@@ -1,0 +1,37 @@
+# Code input to generate an ERD image using https://www.quickdatabasediagrams.com/
+
+campaign
+-
+cf_id PK int
+contact_id int FK >- contacts.contact_id
+company_names string
+description string
+goal float
+pledged float
+outcome string
+backers_count int
+country string
+currency string
+launch_date date
+end_date date
+staff_pick boolean
+spotlight boolean
+category_id string FK >- category.category_id
+subcategory_id string FK >- subcategory.subcategory_id
+
+category
+-
+category_id PK string
+category string
+
+subcategory
+-
+subcategory_id PK string
+subcategory string
+
+contacts
+-
+contact_id PK int
+first_name string
+last_name string
+email string
