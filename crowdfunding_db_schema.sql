@@ -7,7 +7,7 @@ CREATE TABLE "category" (
 
 CREATE TABLE "subcategory" (
     "subcategory_id" VARCHAR(8) NOT NULL PRIMARY KEY,
-    "subcategory" VARCHAR(20) NOT NULL,
+    "subcategory" VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE "contacts" (
